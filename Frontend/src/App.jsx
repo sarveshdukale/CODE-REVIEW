@@ -33,7 +33,7 @@ function App() {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/ai/get-response",
+        "https://code-review-7j85.onrender.com/ai/get-response",
         { code },
       );
 

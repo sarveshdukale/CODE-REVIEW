@@ -7,7 +7,7 @@ const ai = new GoogleGenAI(process.env.GEMINI_API_KEY);
 async function reviewCode(code) {
   try {
     const response = await ai.models.generateContent({
-      model: "gemini-3.8-flash",
+      model: "gemini-2.5-flash",
 
       systemInstruction: ` 
                 Here’s a solid system instruction for your AI code reviewer:
